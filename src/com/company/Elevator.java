@@ -13,10 +13,6 @@ public class Elevator {
         this.floor = floor;
     }
 
-    public int getFloor() {
-        return floor;
-    }
-
     @Override
     public String toString() {
         return "" + floor;
@@ -39,5 +35,9 @@ public class Elevator {
         }
         System.out.println("Выход");
         System.out.println("Время затраченное лифтом на маршрут = " + totalSeconds + " сек.");
+    }
+
+    public static int getPreviousFloor() {
+        return previousFloor;
     }
 }
