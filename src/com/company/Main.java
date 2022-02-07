@@ -23,6 +23,10 @@ public class Main {
             if (floor == 0) {
                 break;
             }
+            if (floor == Elevator.getPreviousFloor()) {
+                System.out.println("Вы уже находитесь на этом этаже, введите другой этаж для продолжения движения лифта");
+                continue;
+            }
             if (floor > 25 || floor < 0) {
                 System.out.println("Такого этажа нет в доме");
             } else {
